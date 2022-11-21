@@ -15,6 +15,9 @@ header{
     border: 2px solid #000;
     margin-bottom: 20px;
     background-color: rgba(128, 128, 128, 0.658);
+    padding-bottom: 15px;
+    padding-left:15px;
+    text-align: justify;
     
 }
 .tl{
@@ -26,6 +29,12 @@ header{
     text-align: center;
     padding-top: 5px;
     border-right: 2px solid black;
+    border-left: 2px solid black;
+    float: right;
+
+}
+section{
+    clear: right;
 }
 #p{
     background-color: pink;
