@@ -1,3 +1,36 @@
 h1{
     color: #b81414c0;
 }
+h2{
+    color: #b81414c0;
+}
+@media all and (max-width:600px){ /* max-width: telas menores que o original */
+    h1{
+        color: rgb(14, 52, 219);
+
+    }
+}
+
+@media screen and (min-width:600px){
+   h2{
+    color: blue;
+   }
+}
+@media (min-width:400px) and (max-width:800px){
+    p{
+        text-transform:uppercase;
+    }
+}
+@media (orientation: landscape){ /* orientation */
+    p{
+        color: blueviolet;
+    }
+}
+@media (min-width:400px), (orientation: landscape){
+    .p2{
+        font-size: 4em;
+    }
+}
+/* beakpoints: indo de tlas menores pra maiores, tlml, talbet, pc, tv. */
+
+/*  Modos  de media: screen, print, all  */
