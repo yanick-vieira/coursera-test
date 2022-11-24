@@ -1,3 +1,46 @@
 @charset 'utf-8';
-
 /* Position: static, relative, absolute, fixed, sticky. */
+
+div{
+height: 50px;
+background-color: #ccc;
+border: 1px solid #222;
+padding: 10px;
+}
+.relative{
+    background-color: #222;
+    position: relative;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+.relative-alt{
+    top:  10px;
+    left: 20px;
+}
+.absolute{ /* Fica dentro de uma outra posicao, neste caso a posicao relativa */
+     height:20px;
+     width: 300px;
+     background-color: rgb(17, 218, 184);
+     position: absolute;
+     top: 0px;
+     right: 0px;
+}
+html {
+    padding-bottom:1000px;
+}
+.fixed{ /* aumentar a commprimento do html para obter o skroll e aplicar o position:fixed */
+    width: 200px;
+    height: 20px;
+    background-color: brown;
+    color: #ccc;
+    position: fixed;
+    top: 5px;
+    left: 350px;
+}
+.sticky{
+   height: 50px;
+   width: 100px;
+   top: 10px;
+   background-color: #881;
+   position: sticky;
+}
