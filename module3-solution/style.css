@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:cursive, Arial, Helvetica, sans-serif;
+}
+.navbar-brand{
+    border: 2px solid #000;
+    background-color: #777777ab;
+    height: 70px;
+    position: relative;
+}
+.navbar-brand .brand{
+    font-size: .8em;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+.navbar-brand .navskroll{
+    border: solid 2px #000;
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    border-radius: 6px;
+}
+.navskroll  hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 6px;
+    height: 5px;
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.navbar-brand .skrolled{
+    position: relative;
+    top: 70px;
+    border: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    visibility: hidden;
+}
+.skrolled  hr{
+    width: 98%;
+    margin-bottom: 5px;
+    background-color: #000;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.skrolled li{
+    text-align: center;
+}
+.navskroll hr:hover{
+    background-color: #fff;
+    border: 1px solid white;
+}
+.navskroll:hover + .skrolled{
+    visibility: visible;
+    cursor: pointer;
+
+}
+.body{
+    margin-top: 90px;
+}
+h2{
+    text-align: center;
+    font-size:2em;
+}
+.col-xs-1{
+    width: 330px;
+    background-color: #777777ab;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+span{
+    position: absolute;
+    left: 40%;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+p{
+    padding: 20px;
+    text-align: justify;
+    padding-top: 30px;
+}
+@media (min-width:767px){
+    .col-md-2{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+    }
+    .col-md-3{
+        width: 97%;
+        position: absolute;
+        top: 660px;
+        left: 10px;
+        right: 10px;
+    }
+     .navskroll {
+    visibility: hidden;
+    }
+}
+@media (min-width:810px){
+    .col-md-4{
+        width: 97%;
+        position: absolute;
+        top: 640px;
+        left: 10px;
+        right: 10px;
+    }
+}
+@media (min-width:1010px){
+    .col-md-3{
+        width: 97%;
+        position: absolute;
+        top: 570px;
+        left: 10px;
+        right: 10px;
+    }
+}
+@media (min-width:1100px){
+    .col-lg-3{
+        float: left;
+        width: 30%;
+        margin-left: 30px;
+    }
+    .col-lg-33{
+        position: relative;
+        top: 0px;
+        
+    }
+}
