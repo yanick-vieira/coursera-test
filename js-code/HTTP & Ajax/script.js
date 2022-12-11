@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event)
+document.addEventListener("DOMContentLoaded", function(event) { 
 
 	document.querySelector("button")
 		.addEventListener("click", function() {
@@ -6,12 +6,24 @@ document.addEventListener("DOMContentLoaded", function(event)
 			var name = "";
 
 			$ajaxUtils
-				.sendGetRequest("/data/name.txt", function (request){
-					self.name = request.responseText; 
+				.sendGetRequest("/data/name.json", function (res){
+				var message =
+				res.firstName + "" + res.lastName
+				if(res.likesKoreanFood){
+					message += "likes Korean food";
+				}
+					else{
+						message += "doesn´t like korean food"
+					}
+					message += "ans uss";
+					message += res.numberOfDisplays + 1;
+					message += "displays for coding";
+
+					document.querySelector("#content")
+					.innerHTML = "<h2>Hello " + message + "</h2>";
 				});
 
-			document.querySelector("#content")
-					.innerHTML = "<h2>Hello " + self.name + "!";
+			
 		});
 });
  

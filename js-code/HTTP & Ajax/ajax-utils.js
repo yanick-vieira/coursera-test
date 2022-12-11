@@ -19,11 +19,11 @@
 
 // requesURL
 	ajaxUtils.sendGetRequest = 
-	function(requestURL, responseHandler){
+	function(requestURL, responseHandler, isJsonResponse){
 		var request = getRequestObject();
 		request.onreadystatechange = 
 		function() {
-			handleResponse(request, responseHandler);
+			handleResponse(request, responseHandler, isJsonResponse);
 		};
 		request.open("GET", requestURL, true);
 		request.send(null); //for POST
@@ -32,7 +32,15 @@
 // not an error
 	function handleResponse(request, responseHandler){
 		if((request.readyState == 4) && (request.status == 200)){
-			responseHandler(request);
+			if (isJsonResponse == undefined){
+				isJsonResponse = true;
+			}
+			if (isJsonResponse){
+				responseHandler(JSON.parse(request.responseText))
+			}
+			else{
+				responseHandler(request.responseText);
+			}
 		}
 	}
 
