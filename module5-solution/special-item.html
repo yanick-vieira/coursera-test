@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Restaurant Website </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg"> 
+						<!-- <div id="logo-img" alt="Logo image"></div> -->
+						<img id = "image" src="images/restaurant-logo.png" alt="Logo image"> 
+					</a>
+
+					<div class="navbar-brand">
+						<a href="index.html"><h1>David Chu's China Bistro</h1></a>
+						<p>
+							<img src="images/star.png" alt="Kosher certification">
+							<span>Kosher Certified</span> 
+						</p>	
+					</div>
+
+		<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    	<span class="navbar-toggler-icon"></span>
+  </button>  -->
+  		<button id = "navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle = "collapse" data-target = "#collapsable-nav" aria-expanded = "false">
+  			<span class="sr-only"> Toggle navigation </span>
+  			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+  		</button>
+ 		</div>
+
+ 		<div id="collapsable-nav" class="collapse navbar-collapse">
+ 			<ul id = "nav-list" class="nav navbar-nav navbar-right">
+ 				<li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+ 				<li> 
+ 					<a href="menu-item.html"> 
+ 						<!-- <i class="fas fa-cutlery"></i> -->
+ 						<span class="glyphicon glyphicon-cutlery"></span>
+ 						<br class="hidden-xs"> Menu </a>
+ 				</li>
+ 				<li>
+ 					<a href="#">
+ 						<!-- <i class="fas fa-info"></i> -->
+ 						<span class="glyphicon glyphicon-info-sign"></span>
+ 						<br class="hidden-xs"> About </a>
+ 				</li>
+ 				<li>
+ 					<a href="#">
+ 						<!-- <i class="fas fa-award"></i> -->
+ 						 <span class="glyphicon glyphicon-certificate"></span> 
+ 						<br class="hidden-xs"> Awards </a>
+ 				</li>
+ 				<li id="phone" class="hidden-xs">
+ 					<a href="tel:0321-4988-467">
+ 						<span>0321-4988-467</span></a>
+ 						<div>* We Deliver </div>
+ 				</li>	
+ 			</ul>
+ 		</div>
+
+		</div>
+		</nav>
+	</header>
+
+	<!-- Main Content -->
+	...
+
+	<section class="row"><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D1</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D1.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Orange Chicken</h3>
+			<p class="menu-item-details">chunks of chicken, breaded and deep-fried with sauce containing orange peels; white meat by request: for pint $1 extra, for large $2 extra</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D2</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D2.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">General Tso's Chicken</h3>
+			<p class="menu-item-details">chunks of chicken, breaded and deep-fried with sauce and scallions; white meat by request: for pint $1 extra, for large $2 extra</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D3</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D3.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Sesame Chicken</h3>
+			<p class="menu-item-details">chunks of chicken, breaded and deep-fried with a sesame seed sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D4</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D4.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Kung Pao Chicken</h3>
+			<p class="menu-item-details">diced chicken sauteed with peanuts, and celery in delicious kung pao sauce; white meat by request: for pint $1 extra, for large $2 extra</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D5</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D5.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Chicken Cashewnuts</h3>
+			<p class="menu-item-details">diced chicken with waterchestnuts, green peppers, and celery, and cashewnuts; white meat by request: for pint $1 extra, for large $2 extra</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D6</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D6.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Chicken with Vegetables</h3>
+			<p class="menu-item-details">white meat chicken in a clear white sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D7</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D7.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Sweet and Sour Chicken</h3>
+			<p class="menu-item-details">white meat chicken, breaded and fried with some green pepper, onion, and pineapples</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D8</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D8.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Beef Broccoli</h3>
+			<p class="menu-item-details">sliced beef sauteed with broccoli in brown sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D9</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D9.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Beef with Garlic Sauce</h3>
+			<p class="menu-item-details">sliced beef sauteed in garlic sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D10</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D10.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Beef with Fresh Vegetables</h3>
+			<p class="menu-item-details">sliced beef sauteed with mixed vegetables</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D11</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D11.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Veal with Fresh Vegetables</h3>
+			<p class="menu-item-details">sliced veal sauteed with mixed vegetables</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D12</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D12.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Veal with Garlic Sauce</h3>
+			<p class="menu-item-details">sliced veal sauteed in garlic sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D13</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D13.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Hunan Bean Curd</h3>
+			<p class="menu-item-details">bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D14</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D14.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Bean Curd with Fresh Vegetables</h3>
+			<p class="menu-item-details">Tofu lightly breaded and fried and sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D15</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D15.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Mixed Vegetables</h3>
+			<p class="menu-item-details">broccoli, carrots, baby corn, water chestnuts, mushrooms, and snow peas sauteed in brown sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D16</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D16.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Eggplant with Garlic Sauce</h3>
+			<p class="menu-item-details">eggplant sauteed with water chestnuts and string beans in garlic sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D17</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D17.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Lo Mein</h3>
+			<p class="menu-item-details">onions, and bean sprouts sauteed with soft lo mein noodles</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="menu-item-tile col-md-6">
+		<div class="row">
+		  <div class="col-sm-5">
+			<div class="menu-item-photo">
+			  <div>D18</div>
+			  <img class="img-responsive" width="250" height="150" src="images/menu/D/D18.jpg" alt="Item">
+			</div>
+			<div class="menu-item-price"><span> </span> $13.95 <span></span></div>
+		  </div>
+		  <div class="menu-item-description col-sm-7">
+			<h3 class="menu-item-title">Chow Mein</h3>
+			<p class="menu-item-details">chow mein noodles sauteed with bean sprouts, onions, and celery in brown sauce</p>
+		  </div>
+		</div>
+		<hr class="visible-xs">
+	  </div><div class="clearfix visible-lg-block visible-md-block"></div></section>
+
+	...
+
+	<footer class="panel-footer">
+		<div  class="container" >
+			<div class="row">
+				<section id="hours" class="col-sm-4">
+					<span> Hours: </span> <br>
+					Mon - Fri: 07pm - 1am <br>
+					Saturday Closed 
+					<hr class="visible-xs">
+				</section>
+				<section id="address" class="col-sm-4">
+					<span> Address: </span> <br>
+					17 Quaid Commercial, Bahria Town, Opposite Eiffel Tower Replica, Lahore, 53720, Pakistan
+					<hr class="visible-xs">
+				</section>
+				<section id="testimonials" class="col-sm-4">
+					<p> "The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!" </p>
+				</section>
+			</div>
+			<div class="text-center"> &copy; Copyright David Chu's China Bistro 2016</div>
+		</div>
+	</footer>	 
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/ajax-utils.js"></script>
+	<!--<script src="js/script.js"></script>-->
+	<script defer src="fontawesome/js/all.js"></script>
+	<script src="js/popper.min.js"></script>
+</body>
+</html>
